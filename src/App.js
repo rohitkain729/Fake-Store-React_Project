@@ -5,6 +5,8 @@ import { FakeStoreProducts } from "./fakestore-components/fakesstore-product";
 import { FakeStoreDetails } from "./fakestore-components/fakestore-details";
 import { FakeStoreRatings } from "./fakestore-components/fakestore-rating";
 import { Invalid } from "./fakestore-components/invalid";
+import { FakeStoreAdminHome } from "./fakestore-components/fakestore-admin";
+import { FakeStoreLogin } from "./fakestore-components/faksestore-login";
 
 function App() {
   return (
@@ -29,8 +31,8 @@ function App() {
             </span>
             <span className="me-3 fs-5">
               {" "}
-              <Link className=" text-white text-decoration-none">
-                Contact
+              <Link className=" text-white text-decoration-none" to="admin">
+                Admin
               </Link>{" "}
             </span>
           </div>
@@ -50,6 +52,8 @@ function App() {
           </Route>
           </Route>
           <Route path="invalid" element={<Invalid/>}/>
+          <Route path="admin" element={<FakeStoreAdminHome/>} />
+          <Route path="login" element={<FakeStoreLogin/>} />
         </Routes>
       </BrowserRouter>
     </div>
