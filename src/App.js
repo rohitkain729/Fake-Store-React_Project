@@ -4,6 +4,7 @@ import { FakeStoreCategories } from "./fakestore-components/fakestore-categories
 import { FakeStoreProducts } from "./fakestore-components/fakesstore-product";
 import { FakeStoreDetails } from "./fakestore-components/fakestore-details";
 import { FakeStoreRatings } from "./fakestore-components/fakestore-rating";
+import { Invalid } from "./fakestore-components/invalid";
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
           <Route path="rating/:id" element = {<FakeStoreRatings/>} />
           </Route>
           </Route>
-          
+          <Route path="invalid" element={<Invalid/>}/>
         </Routes>
       </BrowserRouter>
     </div>
