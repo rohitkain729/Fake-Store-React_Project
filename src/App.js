@@ -43,10 +43,12 @@ function App() {
         <Routes>
           <Route path="/" element={<FakeStoreIndex />} />
           <Route path="categories" element={<FakeStoreCategories />} />
-          <Route path='products/:category' element={<FakeStoreProducts/>} />
+          <Route path='products/:category' element={<FakeStoreProducts/>} >
           <Route path='details/:id' element={<FakeStoreDetails/>} >
           <Route path="rating/:id" element = {<FakeStoreRatings/>} />
           </Route>
+          </Route>
+          
         </Routes>
       </BrowserRouter>
     </div>

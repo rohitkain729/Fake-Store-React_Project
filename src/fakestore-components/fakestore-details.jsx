@@ -10,7 +10,7 @@ export function FakeStoreDetails() {
     axios.get(`https://fakestoreapi.com/products/${params.id}`).then((res) => {
       setProduct(res.data);
     });
-  }, []);
+  }, [params.id]);
 
   return (
    <div className="row">
